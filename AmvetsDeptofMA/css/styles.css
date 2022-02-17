@@ -16,4 +16,5 @@
 
 .nav-link:hover {
     color: gold !important;
+    border-bottom: solid 1px gold;
 }
