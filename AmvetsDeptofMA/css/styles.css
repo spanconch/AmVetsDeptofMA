@@ -11,5 +11,9 @@
     background-color: navy;
 }
 .nav-text a {
+    color: white !important;
+}
+
+.nav-link:hover {
     color: gold !important;
 }
