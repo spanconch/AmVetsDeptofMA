@@ -1,19 +1,19 @@
 .nav-left{
     padding-left: 8%;
 } 
-
 .nav-link {
     min-width: 120px;
     text-align: center;
 }
-
 .bg-vets {
     background-color: navy;
 }
 .nav-text a {
     color: white !important;
 }
-
 .nav-link:hover {
     color: gold !important;
+}
+.container-md {
+    padding-top: 3.5%;
 }
