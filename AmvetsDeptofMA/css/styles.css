@@ -8,6 +8,11 @@
 .bg-vets {
     background-color: navy;
 }
+.foot-text{
+    color: white;
+    padding-left: 10%;
+    padding-top: 5%;
+}
 .nav-text a {
     color: white !important;
 }
@@ -17,4 +22,9 @@
 }
 .container-md {
     padding-top: 3.5%;
+}
+
+.vets-images {
+    width: 960px;
+    height: 540px;
 }
