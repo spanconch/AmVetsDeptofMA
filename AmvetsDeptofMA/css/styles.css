@@ -30,3 +30,13 @@
 .vets-icons {
     padding-left: 0%;
 }
+body {
+    background-color: #aaa9ad;
+}
+.accordion-bg {
+    background-color: navy !important;
+    color: white;
+}
+.white-txt {
+    color: white;
+}
