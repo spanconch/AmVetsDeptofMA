@@ -34,7 +34,7 @@ body {
     color: white;
 }
 .white-txt {
-    color: white;
+    color: white !important;
 }
 .header-txt {
     font-size: 36px;
@@ -43,4 +43,7 @@ li a:hover {
     background-color: navy !important;
     color: gold !important;
     border-bottom: solid 1px gold;
+}
+.white-bord {
+    border: solid 1px white;
 }
