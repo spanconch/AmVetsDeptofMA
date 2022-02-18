@@ -39,3 +39,8 @@ body {
 .header-txt {
     font-size: 36px;
 }
+li a:hover {
+    background-color: navy !important;
+    color: gold !important;
+    border-bottom: solid 1px gold;
+}
