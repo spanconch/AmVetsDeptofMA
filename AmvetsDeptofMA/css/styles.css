@@ -48,3 +48,6 @@ li a:hover {
 .white-bord {
     border: solid 1px white;
 }
+.img-fluid {
+    width: 200px;
+}
