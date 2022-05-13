@@ -51,4 +51,6 @@ li a:hover {
 .img-fluid {
     width: 200px;
 }
-html {background-color: navy;}
+html {
+    background-color: navy;
+}
