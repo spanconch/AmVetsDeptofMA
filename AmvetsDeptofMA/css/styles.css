@@ -118,3 +118,9 @@ a:link {
       margin: 1rem;
     }
 }
+.officers-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: nowrap;
+    
+}
