@@ -124,10 +124,12 @@ a:link {
     flex-flow: nowrap;
     
 }
-<<<<<<< HEAD
 #bannerText {
-    overflow-wrap: break-word;
-    width: fit-content;
+    word-wrap: break-word;
+    white-space: normal;
 }
-=======
->>>>>>> parent of b957499 (banner txt)
+@media screen and (min-width: 500px) {
+        #bannerText {
+            text-align: center;
+        }
+}
