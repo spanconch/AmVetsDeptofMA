@@ -124,7 +124,10 @@ a:link {
     flex-flow: nowrap;
     
 }
+<<<<<<< HEAD
 #bannerText {
     overflow-wrap: break-word;
     width: fit-content;
 }
+=======
+>>>>>>> parent of b957499 (banner txt)
