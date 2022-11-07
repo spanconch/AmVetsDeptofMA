@@ -126,4 +126,5 @@ a:link {
 }
 #bannerText {
     overflow-wrap: break-word;
+    width: fit-content;
 }
