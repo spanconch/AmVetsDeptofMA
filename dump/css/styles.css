@@ -121,8 +121,17 @@ a:link {
 .officers-container {
     display: flex;
     justify-content: center;
-    flex-flow: nowrap;
-    
+    flex-direction: row;
+    flex-flow: wrap;
+}
+.state-officers {
+    margin: 50px;
+    color: aliceblue;
+    size: 20px;
+}
+#officer-break {
+    border-top: 4px solid gold;
+    border-radius: 5px;
 }
 #bannerText {
     word-wrap: break-word;
