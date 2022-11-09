@@ -121,8 +121,17 @@ a:link {
 .officers-container {
     display: flex;
     justify-content: center;
-    flex-flow: nowrap;
-    
+    flex-direction: row;
+    flex-flow: wrap;
+}
+.state-officers {
+    margin: 50px;
+    color: aliceblue;
+    size: 20px;
+}
+#officer-break {
+    border-top: 4px solid gold;
+    border-radius: 5px;
 }
 #bannerText {
     word-wrap: break-word;
@@ -132,4 +141,14 @@ a:link {
         #bannerText {
             text-align: center;
         }
+}
+#clover-card {
+    max-width: fit-content;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#clover-header {
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    text-rendering: optimizeLegibility;
 }
