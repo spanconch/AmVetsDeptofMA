@@ -4,36 +4,46 @@
   .testing-parent {
     display: flex;
     padding: 40px;
+    align-content: space-between;
   }
-  .kid1-row {
-    flex: 50%;
-    max-width: 50%;
+  .kid1-row, .kid1-row2 {
     display: flex;
+    flex: 100%;
+    margin: 10px;
+    max-width: 100%;
     flex-wrap: wrap;
-    padding: 5px;
+    justify-content: flex-start;
+    align-content: space-between;
   }
-  .kid2-row {
+  /* .kid2-row {
     display: flex;
-  }
+  } */
   .twin-kid1 {
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
+    vertical-align: middle;
+    width: 100%;
   }
-  .twin-kid-2 {
-    flex: 50%;
+  /* .twin-kid-2 {
+    flex: 25%;
     max-width: 50%;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: right;
-  }
+  } */
   .ww2posters {
-    border: 4px solid aliceblue;
+    border: 5px solid rgb(219, 209, 180);
     border-radius: 20px;
-    margin: 5px;
     height: auto;
     width: 45%;
     align-items: flex-start;
+    box-shadow: 20px 20px 5px gray;
+    margin-bottom: 20px;
+  }
+  .ww2posters:hover {
+    box-shadow: 20px 20px 5px gray;
+    width: 50%;
+
   }
 
 </style>
@@ -136,29 +146,40 @@
     </nav>
     
     <div class="testing-parent">
-      <div class="kid1-row">
+      <div class="kid1-row" data-masonry='{"percentPosition": true } grid-item--width2'>
         <div class="twin-kid1">
-          <img src="file:///C:/Users/25amira.white/Downloads/AmVets_Uploads-20221109T164615Z-001/AmVets_Uploads/WWII%20Posters/ATT00026.jpg" alt="test" class="ww2posters">
-          <img src="file:///C:/Users/25amira.white/Downloads/AmVets_Uploads-20221109T164615Z-001/AmVets_Uploads/WWII%20Posters/ATT00026.jpg" alt="test" class="ww2posters">
-          <img src="file:///C:/Users/25amira.white/Downloads/AmVets_Uploads-20221109T164615Z-001/AmVets_Uploads/WWII%20Posters/ATT00026.jpg" alt="test" class="ww2posters">
-          <img src="file:///C:/Users/25amira.white/Downloads/AmVets_Uploads-20221109T164615Z-001/AmVets_Uploads/WWII%20Posters/ATT00026.jpg" alt="test" class="ww2posters">
+          <img src="images/WWII%20Posters/ATT00026.jpg" alt="test" class="ww2posters">
+          <img src="images/WWII%20Posters/ATT00062.jpg" alt="test" class="ww2posters">
+          <img src="images/WWII%20Posters/ATT00059.jpg" alt="test" class="ww2posters">
+          <img src="images/WWII%20Posters/ATT00023.jpg" alt="test" class="ww2posters">
         </div>
         <div class="twin-kid1">
-          <img src="file:///C:/Users/25amira.white/Downloads/AmVets_Uploads-20221109T164615Z-001/AmVets_Uploads/WWII%20Posters/ATT00026.jpg" alt="test" class="ww2posters">
-          <img src="file:///C:/Users/25amira.white/Downloads/AmVets_Uploads-20221109T164615Z-001/AmVets_Uploads/WWII%20Posters/ATT00026.jpg" alt="test" class="ww2posters">
-          <img src="file:///C:/Users/25amira.white/Downloads/AmVets_Uploads-20221109T164615Z-001/AmVets_Uploads/WWII%20Posters/ATT00026.jpg" alt="test" class="ww2posters">
-          <img src="file:///C:/Users/25amira.white/Downloads/AmVets_Uploads-20221109T164615Z-001/AmVets_Uploads/WWII%20Posters/ATT00026.jpg" alt="test" class="ww2posters">
-        </div>
-        <div class="twin-kid1">
-          <img src="file:///C:/Users/25amira.white/Downloads/AmVets_Uploads-20221109T164615Z-001/AmVets_Uploads/WWII%20Posters/ATT00026.jpg" alt="test" class="ww2posters">
-          <img src="file:///C:/Users/25amira.white/Downloads/AmVets_Uploads-20221109T164615Z-001/AmVets_Uploads/WWII%20Posters/ATT00026.jpg" alt="test" class="ww2posters">
-          <img src="file:///C:/Users/25amira.white/Downloads/AmVets_Uploads-20221109T164615Z-001/AmVets_Uploads/WWII%20Posters/ATT00026.jpg" alt="test" class="ww2posters">
-          <img src="file:///C:/Users/25amira.white/Downloads/AmVets_Uploads-20221109T164615Z-001/AmVets_Uploads/WWII%20Posters/ATT00026.jpg" alt="test" class="ww2posters">
+          <img src="images/WWII%20Posters/ATT00032.jpg" alt="test" class="ww2posters">
+          <img src="images/WWII%20Posters/ATT00020.jpg" alt="test" class="ww2posters">
+          <img src="images/WWII%20Posters/ATT00038.jpg" alt="test" class="ww2posters">
+          <img src="images/WWII%20Posters/ATT00041.jpg" alt="test" class="ww2posters">
         </div>
       </div>
+      <div class="kid1-row2">
+        <div class="twin-kid1">
+          <img src="images/WWII%20Posters/ATT00044.jpg" alt="test" class="ww2posters">
+          <img src="images/WWII%20Posters/ATT00035.jpg" alt="test" class="ww2posters">
+          <img src="images/WWII%20Posters/ATT00050.jpg" alt="test" class="ww2posters">
+          <img src="images/WWII%20Posters/ATT00053.jpg" alt="test" class="ww2posters">
+        </div>
+        <div class="twin-kid1">
+          <img src="images/WWII%20Posters/ATT00056.jpg" alt="test" class="ww2posters">
+          <img src="images/WWII%20Posters/ATT00047.jpg" alt="test" class="ww2posters">
+          <img src="images/WWII%20Posters/ATT00065.jpg" alt="test" class="ww2posters">
+          <img src="images/WWII%20Posters/ATT00068.jpg" alt="test" class="ww2posters">
+        </div>
+      </div>
+    </div>    
+
+   
      
       
-      <div class="twin-kid-2">
+      <!-- <div class="twin-kid-2">
         <img src="images/bannerribbongold75thann.svg" class="m-5">
           <strong><i>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -179,7 +200,7 @@
       </div>
     <div class="twin-kid-2">
       <div class="col-sm-12 d-flex justify-content-center">
-        <!--image carousel-->
+        <image carousel
         <div id="carouselExampleIndicators" class="carousel slide m-5 img-thumbnail w-75" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -207,11 +228,11 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
         <!-- <div class="row">
       <div class="column">
-        <img src="file:///C:/Users/25amira.white/Downloads/AmVets_Uploads-20221109T164615Z-001/AmVets_Uploads/WWII%20Posters/ATT00026.jpg" alt="test" width="25%" class="img-thumbnail m-5">
+        <img src="images/WWII%20Posters/ATT00026.jpg" alt="test" width="25%" class="img-thumbnail m-5">
         <img src="images/minuteman.jpg" alt="Statue of the Minuteman" width="60%" class="img-thumbnail m-5">
       </div>
       <div class="col-sm-6">
