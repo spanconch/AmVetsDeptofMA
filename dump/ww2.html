@@ -3,26 +3,26 @@
 <style>
   .testing-parent {
     display: flex;
+    flex: 100%;
+    max-width: 100%;
     padding: 40px;
-    align-content: space-between;
+    justify-content: center;
+    margin: 15px;
   }
-  .kid1-row, .kid1-row2 {
+  .kid1-row, .kid2-row {
     display: flex;
     flex: 100%;
-    margin: 10px;
     max-width: 100%;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: space-between;
+    flex-direction: column;
+    justify-content: center;
   }
   /* .kid2-row {
     display: flex;
   } */
-  .twin-kid1 {
-    flex-direction: column;
-    justify-content: center;
-    vertical-align: middle;
+  .twin-kid1, .twin-kid2 {
     width: 100%;
+    justify-self: center;
   }
   /* .twin-kid-2 {
     flex: 25%;
@@ -34,16 +34,30 @@
   .ww2posters {
     border: 5px solid rgb(219, 209, 180);
     border-radius: 20px;
-    height: auto;
+    height: 600px;
+    max-height: fit-content;
     width: 45%;
-    align-items: flex-start;
-    box-shadow: 20px 20px 5px gray;
-    margin-bottom: 20px;
+    margin: 10px;
   }
   .ww2posters:hover {
     box-shadow: 20px 20px 5px gray;
+    height: 650px;
     width: 50%;
+    animation: enlarge-poster 2s;
+  }
 
+  #wwii-font {
+    font-family: 'Bungee';
+    text-align: center;
+    font-size: 150px;
+    text-decoration: underline;
+    color: rgb(211, 18, 34);
+    text-shadow: 5px 10px antiquewhite, 10px 15px rgb(81, 81, 145);
+  }
+
+  @keyframes enlarge-poster {
+    0% {width: 45%; height: 600px;}
+    100% {width: 50%; height: 650px;}
   }
 
 </style>
@@ -58,7 +72,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</head>
+    <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
+  </head>
 <body>
     <!--navbar-->
     <!--hello-->
@@ -144,7 +159,9 @@
         </div>
       </div>
     </nav>
-    
+    <h1 id="wwii-font">
+      <b><i>WWII POSTERS</i></b>
+    </h2>
     <div class="testing-parent">
       <div class="kid1-row" data-masonry='{"percentPosition": true } grid-item--width2'>
         <div class="twin-kid1">
@@ -160,14 +177,14 @@
           <img src="images/WWII%20Posters/ATT00041.jpg" alt="test" class="ww2posters">
         </div>
       </div>
-      <div class="kid1-row2">
-        <div class="twin-kid1">
+      <div class="kid2-row">
+        <div class="twin-kid2">
           <img src="images/WWII%20Posters/ATT00044.jpg" alt="test" class="ww2posters">
           <img src="images/WWII%20Posters/ATT00035.jpg" alt="test" class="ww2posters">
           <img src="images/WWII%20Posters/ATT00050.jpg" alt="test" class="ww2posters">
           <img src="images/WWII%20Posters/ATT00053.jpg" alt="test" class="ww2posters">
         </div>
-        <div class="twin-kid1">
+        <div class="twin-kid2">
           <img src="images/WWII%20Posters/ATT00056.jpg" alt="test" class="ww2posters">
           <img src="images/WWII%20Posters/ATT00047.jpg" alt="test" class="ww2posters">
           <img src="images/WWII%20Posters/ATT00065.jpg" alt="test" class="ww2posters">
