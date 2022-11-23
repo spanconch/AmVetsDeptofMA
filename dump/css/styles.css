@@ -152,3 +152,12 @@ a:link {
     text-align: center;
     text-rendering: optimizeLegibility;
 }
+nav {
+    font-family: Helvetica, Arial sans-serif;
+}
+@media screen and (max-width: 1300px) {
+    #headerBanner {
+        max-width: 95%;
+        align-self: center;
+    }
+}
