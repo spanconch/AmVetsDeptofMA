@@ -155,9 +155,18 @@ a:link {
 nav {
     font-family: Helvetica, Arial sans-serif;
 }
-@media screen and (max-width: 1300px) {
+
+/* @media screen and (max-width: 1300px) {
     #headerBanner {
-        max-width: 95%;
-        align-self: center;
+        float: left !important;
     }
 }
+@media screen and (max-width: 800px) {
+    #headerBanner {
+        width: 80% !important;
+    }
+    #logos-div {
+        margin: 0px auto;
+        width: 80%;
+    }
+} */
