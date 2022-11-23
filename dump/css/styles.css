@@ -158,6 +158,7 @@ nav {
 @media screen and (max-width: 1300px) {
     #headerBanner {
         max-width: 95%;
+        position: relative;
         align-self: center;
     }
 }
