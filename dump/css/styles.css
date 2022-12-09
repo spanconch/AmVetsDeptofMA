@@ -83,7 +83,7 @@ html {
 .main-txt {
     color: black;
     font-size: 1.375rem;
-    text-align: center;
+    /* text-align: center; */
 }
 .txt-header {
     font-weight: bolder;
