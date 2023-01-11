@@ -8,6 +8,7 @@
         <link rel="icon" type="icon" href="images/amvets-logo.ico">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href="css/styles.css" rel="stylesheet">
+        <link href="css/polaroids.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </head>
@@ -94,32 +95,64 @@
           </div>
         </div>
       </nav>
+      <div class="container">      
           <div class="row">
-            <div class="col-8">
-              <!--<img src="images/banner.svg" class="img-fluid" alt="Responsive image">-->
-            </div>
-          </div>
-          <!--Created by Chris Mainieri-->
-          <!--Posts begin here-->
-          <div class="row">
+            
             <div class="col-4">
-              <div class="row">
-                <div class="col-12">
+              <!-- start polaroids -->
+              <div class="container__items">
+                <div class="polaroid one">
+                  <div class="polaroid__content">
+                    <div class="polaroid__content-image">
+                      <img src='images/Post51/Post_51_Sign_400.jpg' alt=''>
+                    </div>
+                    <!-- <div class="polaroid__content-caption">
+                      <p>the good ol' boy</p>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="polaroid two">
+                  <div class="polaroid__content">
+                    <div class="polaroid__content-image">
+                      <img src='images/Other Posts/Post_333_Albatross_2_400.jpg' alt=''>
+                    </div>
+                    <!-- <div class="polaroid__content-caption">
+                      <p>mr i didn't do it</p>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="polaroid three">
+                  <div class="polaroid__content">
+                    <div class="polaroid__content-image">
+                      <img src='images/Other Posts/Post_38_Group_Pic_1_400.jpg' alt=''>
+                    </div>
+                    <!-- <div class="polaroid__content-caption">
+                      <p>do you want a flower?</p>
+                    </div> -->
+                  </div>
+                </div>
+               
+              </div>
+              <!-- end polaroids -->
+              <!-- <div class="row">
+                
                   <img src="images/Other Posts/Post_38_Group_Pic_1_400.jpg" alt="Photo of Post 38 Members" class="thumbnail p-10">
-                </div>
+                
               </div>
               <div class="row">
-                <div class="col-12">
+                
                   <img src="images/Other Posts/Post_333_Albatross_2_400.jpg" alt="Photo of Post 38 Members" class="thumbnail p-10">
-                </div>
+                
               </div>
               <div class="row">
-                <div class="col-12">
+                
                   <img src="images/Post51/Post_51_Sign_400.jpg" alt="Photo of Post 38 Members" class="thumbnail p-10">
-                </div>
-              </div>
+                
+              </div> -->
             </div>
-            <div class="col-8">
+            <!--Created by Chris Mainieri-->
+          <!--Posts begin here-->
+            <div class="col-8 py-10">
               <div class="accordion accordion-flush" id="postsAccordion">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="post4Header">
@@ -798,5 +831,13 @@
                 </a>
             </div>
         </div>
+      </div>
+      <script>
+        var polaroids = document.querySelectorAll('.polaroid');
+        polaroids.forEach(item => {
+          const randomRotation = Math.floor(Math.random() * (6 - -6 + 1) + -6);
+          item.style.transform = `rotate(${randomRotation}deg)`
+        })
+      </script>
     </body>
 </html>
